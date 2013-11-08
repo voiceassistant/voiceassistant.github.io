@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>patternsyntax</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Синтаксис паттернов</h1>
+<p><em>Ассистент на русском</em> распознаёт речь пользователя с помощью используемой системы распознавания. Результатом распознавания является обычный текст, из которого ассистенту необходимо понять, чего хочет пользователь.</p>
+<p>Другими словами, необходимо выделить из текста все смысловые части и необходимые данные для правильной диспетчеризации запроса к одному из приложений или модулей самого ассистента.</p>
+<p>Для этого каждое приложение должно предоставить по крайней мере одну <em>грамматику запросов</em>, в которой будет описано, на какие фразы пользователя нужно реагировать  вашему приложению (с помощью <em>текстовых шаблонов</em>), какая команда и в каком контексте должна быть выполнена, и какие данные из текста нужно выделить для передачи на вход команде.</p>
+<p>Синтаксис шаблонов (или паттернов) достаточно гибок для задания вариативности речи, воспринимаемой вашим приложением. Шаблоны содержатся в грамматике запросов, описываемых в виде xml-файлов. Подробнее о грамматиках читайте в <a href="grammarsyntax.html">специальном разделе</a>.</p>
+<h2>Как работают паттерны</h2>
+<p>Каждый паттерн ставится в соответствии с одной определённой командой и содержит все возможные формулировки запроса на естественном языке, а также именованные placeholder'ы для извлечения параметров. Эти параметры затем передаются на точку входа в приложение (<a href="agent.html">агент</a>) в виде дерева разбора (аналог семантического дерева). Это дерево содержит все данные, определенные в паттерне в виде независимых от языка сущностей (<a href="token.html">Token</a>).</p>
+<h2>Как преобразовать Token в данные</h2>
+<p>Чтобы преобразовать результат разбора фразы (<a href="token.html">Token</a>) в данные некоторого типа (например, в <code>int</code> или экземпляр какого-либо класса) используются <a href="token.html">конвертеры</a>. Для глобальных паттернов можно пользоваться уже имеющимися в API конвертерами, для собственных паттернов нужно реализовать свои.</p>
+<h2>Синтаксис</h2>
+<p>Синтаксис паттернов во многом схож с синтаксисом формальных грамматик систем распознавания речи. Например <a href="http://www.w3.org/TR/jsgf/">JSGF</a>. Вложенность паттернов может быть сколь угодно глубокой.</p>
+<p>В паттернах используются следующие конструкции:</p>
+<h3>Альтернативы</h3>
+<p>Определяет наличие в данной позиции текста одной из перечисленных конструкций или последовательности символов.</p>
+<pre><code>(первый|второй|первый или второй|$Number)
+</code></pre>
+
+<p>Символ <code>|</code> используется для разделения альтернативных конструкций. В данном примере указано, что в тексте должно присутствовать либо слово <em>первый</em>, либо слово <em>второй</em>, либо фраза целиком <em>первый или второй</em>, либо число в любом формате, определённое в паттерне с именем <em>Number</em>.</p>
+<p>Альтернативы необходимо заключать в круглые скобки.</p>
+<h3>Опции</h3>
+<p>Определяет необязательное (опциональное) наличие некоторых конструкций в данной позиции в тексте.</p>
+<pre><code>[первый|второй|первый или второй|$Number]
+</code></pre>
+
+<p>Опции необходимо заключать в квадратные скобки.</p>
+<h3>Перестановки</h3>
+<p>Для задания вариативности речи без необходимости написания множества одинаковых паттернов можно использовать перестановки в тех местах, где последовательность слов может быть любой.</p>
+<pre><code>{как дела}
+</code></pre>
+
+<p>Перестановки заключаются в фигурные скобки. Символ <code>|</code> не используется для разделения конструкций, которые необходимо переставлять. Для этого можно использовать круглые скобки. Например, в случаях, когда переставляются целые фразы, в которых присутствует пробел.</p>
+<p>В данном примере паттерн будет обрабатывать сразу две фразы - <em>как дела</em> и <em>дела как</em>.</p>
+<h3>Мусор</h3>
+<p>Означает, что в данной позиции в тексте может быть любое количество любых символов и слов, либо ничего. Для этого используется символ <code>*</code>.</p>
+<pre><code>меня зовут *
+</code></pre>
+
+<p>После обязательного словосочетания <em>меня зовут</em> может идти любая последовательность символов или слов, или вообще ничего.</p>
+<h3>Стемы</h3>
+<p>Символ <code>*</code> может также использоваться для изменения формы используемого слова.</p>
+<pre><code>красн*
+</code></pre>
+
+<p>Под этот вариант подойдут любые слова, начинающиеся на <em>красн</em> (красный, красные и т.д.). Можно указывать <code>*</code> как в начале, так и в конце слова. Можно в начале и конце одновременно.</p>
+<h3>Ссылка на паттерн</h3>
+<p>На ранее определенные в грамматике или на импортированные паттерны можно ссылаться с помощью указания имени паттерна и символа <code>$</code> перед ним.</p>
+<pre><code>меня зовут $Name
+</code></pre>
+
+<p>После обязательного словосочетания <em>меня зовут</em> должна идти обязательная конструкция, определенная в паттерне <em>Name</em>.</p>
+<h3>Синонимы</h3>
+<p>В паттерне можно сразу задать синоним для ссылки на другой паттерн. Используется два символа двоеточия <code>::</code>.</p>
+<pre><code>$MyNumber::Number
+</code></pre>
+
+<p>В дереве разбора для такого паттерна будет присутствовать токен <em>MyNumber</em> в который будет вложен токен <em>Number</em>. Такая конструкция удобна в случае использования одних и тех же паттернов в перестановках - для разделения паттернов по именам.</p>
+<h3>Отображение</h3>
+<p>Символ <code>:</code> обозначает отображение конструкции на некоторое строковое значение</p>
+<pre><code>(один:1|два:2|три:3)
+</code></pre>
+
+<p>В результатах разбора каждому слову будет поставлено в соответствие заданное значение. Например, если пользователь скажет <em>три</em>, то в дереве для этого паттерна будет значение <em>3</em>. Это удобно для абстрагирования текстовых данных от речи на каком-либо языке. Далее эти значения можно использовать, например, для конвертации в нужный формат.</p>
+<p><em>Отображаемое значение не должно содержать пробелов!</em> </p>
+<p>Если необходимо указать значение для целой конструкции, а не для слова, то необходимо заключить конструкцию в круглые скобки. Например</p>
+<pre><code>(после завтра):day_after_tomorrow
+</code></pre>
+
+<h3>Повторения</h3>
+<p>Последовательность одного и более паттерна можно указать с помощью конструкции <code>repeat</code></p>
+<pre><code>repeat($Number)
+</code></pre>
+
+<p>Указывает, что в данной позиции текста должно присутствовать одно или более чисел. Например, подойдёт номер телефона <em>812 777 12 34</em>.</p>
+<h2>Сложные конструкции</h2>
+<p>Для реализации сложных конструкций с множеством альтернатив, отображений и имён, предлагается декомпозировать паттерн путём вложения одного паттерна в другой. О том, как это делается, читайте в описании <a href="grammarsyntax.html">синтаксиса грамматик запросов</a>.</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

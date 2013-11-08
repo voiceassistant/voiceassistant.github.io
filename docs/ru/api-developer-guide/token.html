@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>token</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Token</h1>
+<p>Токен - это контейнер данных, полученных в ходе разбора фразы пользователя по правилам, описанным в паттерне.</p>
+<p>Другими словами, токен можно воспринимать как семантическое дерево разбора. Это представление фразы пользователя в виде абстракции, не зависящей на конкретного языка.</p>
+<p>Токены вложены друг в друга, поэтому мы говорим именно о дереве. При срабатывании паттерна в агента передается один токен - это корневой элемент, содержащий всю фразу и, как правило, вложенные токены.</p>
+<h2>Атрибуты токена</h2>
+<p>Каждый токен обязательно содержит подстроку текста из фразы - поле <code>source</code>.</p>
+<p>Также имеются необязательные атрибуты:</p>
+<p><code>name</code> - имя токена, если оно задано в атрибуте <code>name</code> паттерна или в виде синонима</p>
+<p><code>value</code> - отображаемое значение, если оно определено в паттерне с помощью <code>:</code></p>
+<p><code>tokens</code> - дочерние токены</p>
+<h2>Как работать с токенами</h2>
+<p>Класс <a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Token.html"><code>Token</code></a> предоставляет вспомогательные методы для поиска дочерних токенов по имени или по индексу.</p>
+<p><a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Token.html#findTokenByName(java.lang.String)"><code>findTokenByName</code></a></p>
+<p><a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Token.html#findTokensByName(java.lang.String)"><code>findTokensByName</code></a></p>
+<p><a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Token.html#getTokensCount()"><code>getTokensCount</code></a></p>
+<p><a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Token.html#getTokenByIndex(int)"><code>getTokenByIndex</code></a></p>
+<p><a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Token.html#isEmpty()"><code>isEmpty</code></a></p>
+<p><a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Token.html#hasToken(java.lang.String)"><code>hasToken</code></a></p>
+<p>В токене может содержаться более одного токена с одинаковым именем (например, при использовании <code>repeat</code>). В таком случае <a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Token.html#findTokenByName(java.lang.String)"><code>findTokenByName</code></a> вернёт только первый из них, а <a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Token.html#findTokensByName(java.lang.String)"><code>findTokensByName</code></a> вернёт все.</p>
+<p>Все дочерние токены нумеруются слева направо, начиная с нуля. Метод <a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Token.html#getTokenByIndex(int)"><code>getTokenByIndex</code></a> возвращает токен по индексу.</p>
+<h2>Конвертеры</h2>
+<p>По сути, токен - это &quot;сырое&quot; представление данных, полученных в результате разбора текста по паттерну. Иногда для работы с токеном достаточно этих данных (поля <code>name</code>, <code>source</code> и <code>value</code>). Но иногда требуется преобразовать токен в экземпляр более подходящего типа данных для реализации логики приложения.</p>
+<p>Например, фраза <em>Двадцать пять</em> на русском языке неудобна для выполнения каких-либо вычислений. Её хорошо бы сперва преобразовать в целочисленное <em>25</em>.</p>
+<p>Для этого используются конвертеры токенов. На вход они принимают токен, а на выходе возвращают экземпляр требуемого класса.</p>
+<p>API содержит необходимые конвертеры для токенов всех <a href="grammarsyntax.html">глобальных паттернов</a>. Для собственных токенов может понадобиться реализовать свои конвертеры.</p>
+<h3>Конвертеры глобальных паттернов</h3>
+<p>Все конвертеры реализованы в виде синглтонов, т.к. конвертер не должен хранить состояние. У каждого ковертера есть метод класса <code>getInstance</code>, который возвращает экземпляр конвертера. Это рекомендуемый способ реализации ваших собственных конвертеров.</p>
+<p><em>NumberConverter</em> - получает на вход токен глобального паттерна <em>Number</em>. Возвращает <em>Integer</em>.</p>
+<p><em>DateConverter</em> - получает на вход токен глобального паттерна <em>Date</em>. Возвращает обёртку <em>Date</em>, представляющую дату.</p>
+<p><em>TimeConverter</em> - получает на вход токен глобального паттерна <em>Time</em>. Возвращает обёртку <em>Time</em>, представляющую время.</p>
+<p><em>DateTimeConverter</em> - получает на вход токен глобального паттерна <em>DateTime</em>. Возвращает обёртку <em>DateTime</em>, представляющую дату-время.</p>
+<p><em>LocationConverter</em> - получает на вход токен глобального паттерна <em>Location</em>. Возвращает обёртку <em>Location</em>, представляющую географическое месторасположение (либо только координаты, либо конкретный город).</p>
+<p><em>ContactConverter</em> - получает на вход токен глобального паттерна <em>Contact</em>. Возвращает обёртку <em>Contact</em>, представляющую контакт из контактной книги пользователя.</p>
+<h3>Как реализовать свой конвертер</h3>
+<p>Ковертер - это просто реализация параметризованного интерфейса <a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/client/converter/TokenConverter.html"><code>TokenConverter</code></a>. Метод <a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/client/converter/TokenConverter.html#convert(mobi.voiceassistant.base.Token)"><code>convert</code></a> этого интерфейса принимает в качестве параметра токен и возвращает объект соответствующего класса.</p>
+<h3>Использование конвертеров</h3>
+<p>В общем случае для использования конвертера нужно сначала найти необходимый токен в родительском токене или в кукисах, а затем передать его на вход методу <code>convert</code> конвертера. Вот пример того, как это может быть сделано:</p>
+<pre><code>Token timeToken = request.getToken().findTokenByName(AssistantAgentContract.Tokens.TOKEN_TIME);
+Time time = TimeConverter.getInstance().convert(timeToken);
+</code></pre>
+
+<p>В этом примере мы сперва ищем токен с именем <em>Time</em> (константа <code>AssistantAgentContract.Tokens.TOKEN_TIME</code>), а затем передаём его конвертеру <a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/client/converter/TimeConverter.html"><code>TimeConverter</code></a> в метод <code>convert</code>. Результатом является объект класса <a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/client/model/Time.html"><code>Time</code></a>, представляющий информацию о времени. Далее вы можете использовать необходимые методы этого класса для использования данных о времени в логике вашего приложения (например, метод <a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/client/model/Time.html#getCalendar()"><code>getCalendar</code></a>).</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

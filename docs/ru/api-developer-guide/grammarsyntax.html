@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>grammarsyntax</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Грамматики запросов</h1>
+<p>Грамматики (модули) описывают правила, по которым фразы пользователя воспринимаются вашей программой. А именно - какие команды и в каком контексте в каждый момент времени могут быть выполнены.</p>
+<h2>Общие сведения</h2>
+<p>Грамматики - это обычные xml-файлы, хранящиеся в директориях вашего проекта.</p>
+<h3>Где создаются грамматики</h3>
+<p>Грамматики создаются в директории <code>xml</code> вашего проекта. Если необходимо описать грамматики для различных языков, то необходимо воспользоваться стандартной процедурой локализации ресурсов в Android-е - т.е. создать файлы грамматик в директориях вида <code>xml-&lt;код языка&gt;</code>.</p>
+<h3>Что содержится в грамматиках</h3>
+<p>Грамматики содержат список команд и <a href="patternsyntax.html">паттернов</a>, используемых вашим приложением. В них не содержится код, выполняющий какую-либо логику. Грамматики могут использовать паттерны, определенные в других грамматиках (например, доступные всем паттерны чисел или времени).</p>
+<h2>Структура грамматик</h2>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;module xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;
+    &lt;uses-pattern name=&quot;...&quot;/&gt;
+
+    &lt;pattern name=&quot;...&quot; value=&quot;...&quot;/&gt;
+    &lt;pattern name=&quot;...&quot; uri=&quot;...&quot;/&gt;
+
+    &lt;pattern name=&quot;...&quot;&gt;
+        &lt;pattern value=&quot;...&quot;/&gt;
+    &lt;/pattern&gt;
+
+    &lt;command android:id=&quot;@+id/...&quot;&gt;
+        &lt;pattern value=&quot;...&quot;/&gt;
+
+        &lt;command android:id=&quot;@+id/...&quot;&gt;
+            &lt;pattern value=&quot;...&quot;/&gt;
+        &lt;/command&gt;
+    &lt;/command&gt;
+&lt;/module&gt;
+</code></pre>
+
+<p>Корневым элементом является тэг <code>module</code>. В нём указывается схема <code>android</code>.</p>
+<p>Модуль может содержать неограниченное количество паттернов и команд.</p>
+<h3>pattern</h3>
+<hr />
+<p>Описывает шаблон (паттерн) для пользовательской фразы. Синтаксис паттернов  детально описан <a href="patternsyntax.html">здесь</a>.</p>
+<p>Паттерны, указанные непосредственно под тэгом <code>module</code> - это общие паттерны, которые используются в других паттернах. Паттерны под тэгами <code>command</code> - это непосредственно те паттерны, которые обрабатывают запросы для каждой конкретной команды.</p>
+<h4>Атрибут <code>name</code></h4>
+<p>У каждого паттерна может быть имя (атрибут <code>name</code>), которое однозначно идентифицирует паттерн в модуле, и по которому можно ссылаться на него в других паттернах. Также это имя будет указано в семантическом дереве, которое будет передано в запросе к вашему приложению.</p>
+<h4>Атрибут <code>value</code></h4>
+<p>Паттерн может быть задан явно с помощью <a href="patternsyntax.html">синтаксиса паттернов</a> в атрибуте <code>value</code>. Либо неявно с использованием атрибута <code>uri</code>.</p>
+<h4>Атрибут <code>uri</code></h4>
+<p>Здесь указывается URI, по которому будет сформирован паттерн. Это либо URI локального <a href="contentproviders.html">контент-провайдера</a> со схемой <code>content://</code>, либо удалённый паттерн (поддерживаются схемы <code>http://</code> и <code>ws://</code>). </p>
+<p><strong><em>Данное руководство пока не описывает возможность использовать удалённые паттерны.</em></strong></p>
+<p><em>Паттерн может быть задан либо явно с помощью <code>value</code>, либо неявно с помощью <code>uri</code>. Использовать оба варианта одновременно для одного паттерна нельзя!</em></p>
+<h4>Вложенность паттернов</h4>
+<p>Паттерны могут быть вложенными. Это означает более наглядную запись альтернатив. Например, паттерн вида</p>
+<pre><code>    &lt;pattern name=&quot;Pattern&quot;&gt;
+        &lt;pattern value=&quot;one&quot;/&gt;
+        &lt;pattern value=&quot;two&quot;/&gt;
+    &lt;/pattern&gt;
+</code></pre>
+
+<p>Равнозначен паттерну вида</p>
+<pre><code>    &lt;pattern name=&quot;Pattern&quot; value=&quot;(one|two)&quot;/&gt;
+</code></pre>
+
+<p>Еще одной особенностью такой вложенности является возможность задать каждому вложенному паттерну имя.</p>
+<h3>uses-pattern</h3>
+<hr />
+<p>Этот тэг импортирует паттерн, определённый в другом модуле.</p>
+<h4>Атрибут <code>name</code></h4>
+<p>Здесь указывается уникальное имя паттерна, который необходимо импортировать.</p>
+<h4>Список глобальных паттернов</h4>
+<p>Существует набор глобальных (общих) паттернов, доступных всем приложениям.</p>
+<p><strong><em>Number</em></strong> - числа в различных формах. Этому паттерну соответствует конвертер <em>NumberConverter</em> для извлечения целого числа.</p>
+<p><strong><em>Date</em></strong> - даты. Конвертер DateConverter возвращает обёртку Date.</p>
+<p><strong><em>Time</em></strong> - время. Конвертер TimeConverter возвращает обёртку Time.</p>
+<p><strong><em>DateTime</em></strong> - дата-время. Используется когда во фразе необходимо наличие неразделимой последовательности даты и времени. Конвертер DateTimeConverter возвращает обёртку DateTime.</p>
+<p><strong><em>Location</em></strong> - географическое месторасположение. Как абсолютные (города), так и относительные (здесь, там и т.п.). Ковертер LocationConverter позволяет получить местоположение в виде обёртки Location.</p>
+<p><strong><em>Contact</em></strong> - контакт из контактной книги пользователя. ContactConverter возвращает обёртку Contact.</p>
+<p><em>Подробнее о конвертерах можно узнать <a href="converters.html">здесь</a>.</em></p>
+<h3>command</h3>
+<hr />
+<p>В этом тэге указывается идентификатор команды, которая будет передана <a href="agents.html">агенту</a>, обрабатывающему запросы к вашему приложению. В команду вложен по крайней мере один паттерн, а также может быть вложена другая команда.</p>
+<h4>Атрибут <code>android:id</code></h4>
+<p>Здесь указывается идентификатор команды. Записывается в формате <code>@+id/&lt;идентификатор&gt;</code>, либо <code>@id/&lt;идентификатор&gt;</code>. Т.к. все xml-файлы компилируются, эти идентификаторы впоследствии будут доступны через <code>R.id</code>.</p>
+<h4>Вложенные паттерны</h4>
+<p>В каждой команде должен присутствовать хотя бы один паттерн - это фраза, на которую должна сработать команда. Другими словами, при обработке текста от системы распознавания, ассистент выберет паттерн, наиболее точно подходящий под этот текст, и передаст управление соответствующему агенту с указанием команды, в которой сработал паттерн.</p>
+<h4>Вложенные команды</h4>
+<p>В команду верхнего уровня (ту, которая описана непосредственно в тэге <code>module</code>) можно вложить несколько дочерних команд. Эти команды будут доступны пользователю только после того, как сработает команда верхнего уровня, в которую они вложены (читайте подробнее в разделе <a href="scopes.html">Scopes</a>).</p>
+<p>Например, после фразы <em>&quot;Расскажи погоду&quot;</em> пользователь может сказать <em>&quot;На завтра&quot;</em> или <em>&quot;В Москве&quot;</em>, но без первоначальной команды эти фразы бессмысленны и соответственно не будут доступны пользователю.</p>
+<p>Вложенные команды формируют автоматически-разворачиваемые области (scopes), формируя таким образом диалоговый контекст. Конечно, можно управлять этим процессом более гибко. Для этого нужно воспользоваться соответствующими методами API, где можно указывать модули (грамматики), которые сейчас должны обрабатывать запросы пользователя. Об этом более подробно описано в разделе <a href="advanced.html">Продвинутые функции</a>.</p>
+<h3>sample</h3>
+<hr />
+<p>Этот тэг используется только внутри тэга <code>command</code>. В единственном атрибуте <code>value</code> нужно указать пример пользовательского запроса, который может использоваться для команды.</p>
+<blockquote>
+<p>Впоследствии это значение может использоваться в пользовательском интерфейсе <em>Ассистента на русском</em> для отображения примеров того, что сейчас можно сказать.</p>
+</blockquote>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

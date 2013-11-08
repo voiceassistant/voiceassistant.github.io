@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>agents</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Агенты</h1>
+<p>Агент - это точка входа в ваше приложение. С точки зрения реализации - это специальная надстройка над <a href="http://developer.android.com/guide/components/services.html">Android-сервисом</a>. За счёт того, что <em>Ассистент на русском</em> использует технику межпроцессного взаимодействия, функциональность вашего приложения становится доступна пользователю ассистента посредством вызова специальных методов агента.</p>
+<blockquote>
+<p>Агент представляет собой немного больше, чем просто сервис. Это специальная обёртка, реализующая методы для взаимодействия с пользователем посредством ассистента. Агенты могут генерировать UI, обрабатывать его события, управлять контекстом разговора, стартовать сторонние активности для получения результата от них и мн. др. необходимые функции.</p>
+</blockquote>
+<h2>Регистрация агента</h2>
+<p>Агенты приписываются в файле манифеста <code>AndroidManifest.xml</code> вашего приложения в виде сервиса:</p>
+<pre><code>&lt;service android:name=&quot;.MyAgent&quot;&gt;
+
+        &lt;intent-filter&gt;
+            &lt;action android:name=&quot;mobi.voiceassistant.intent.action.COMMAND&quot;/&gt;
+            &lt;data android:scheme=&quot;assist&quot; android:host=&quot;mobi.voiceassistant.ru&quot;/&gt;
+        &lt;/intent-filter&gt;
+
+        &lt;meta-data android:name=&quot;mobi.voiceassistant.MODULE&quot;
+                   android:resource=&quot;@xml/mod_example&quot;/&gt;
+
+&lt;/service&gt;
+</code></pre>
+
+<p>В качестве фильтра необходимо указать, что сервис должен принимать action <code>mobi.voiceassistant.intent.action.COMMAND</code>. Это означает, что агент реагирует на команды пользователя.</p>
+<p>Также необходимо указать, с каким приложением <em>Ассистента на русском</em> работает ваш агент. Для этого в атрибуте <code>android:host</code> тэга <code>data</code> в фильтре нужно указать имя пакета ассистента.</p>
+<blockquote>
+<p>Дело в том, что приложение <em>Ассистент на русском</em> может существовать в виде разных сборок. Например, по языкам. И поэтому иметь разные пакеты.</p>
+<p>Если ваш агент может работать с несколькими сборками (например, работать на разных языках), то можно указать несколько пакетов, записав несколько тэгов <code>data</code> в фильтре агента.</p>
+</blockquote>
+<p>Мета-данное <code>mobi.voiceassistant.MODULE</code> указывает, какой <a href="grammarsyntax.html">модуль</a> используется в качестве основного вашим агентом. При инициализации агента <em>Ассистент на русском</em> загрузит все команды этого модуля и свяжет их с агентом.</p>
+<h2>Жизненный цикл агента</h2>
+<p>Совпадает с жизненным циклом основного сервиса <em>Ассистента на русском</em> - <code>Dispatcher</code>.</p>
+<h2>Взаимодействие с пользователем</h2>
+<p>С пользователем взаимодействует приложение ассистента, которое принимает решение о том, какой агент должен обработать каждый конкретный запрос.</p>
+<p>Ассистент диспетчеризует запрос пользователя к агенту, вызывая соответствующие методы обратной связи и передавая в них необходимые данные.</p>
+<p>На каждый такой запрос агент должен сформировать ответ(ы) в каком-либо формате (UI, обычный текст, текст для произнесения и т.п.), а также может изменить текущий контекст диалога (активировать необходимые модули или перевести разговор в модальный режим). Подробнее об управлении контекстом читайте в разделе <a href="scopes.html">Scopes</a>.</p>
+<blockquote>
+<p>По аналогии с <em>HTTP</em> протоколом агент выступает в качестве сервера для браузера (ассистента). С тем лишь отличием, что на каждый запрос пользователя агент может сформировать сразу несколько ответов, которые будут отображены в виде альтернатив.</p>
+<p>С этой аналогией связаны названия сущностей запроса и ответа в API (<code>Request</code> и <code>Response</code> соответственно). Также существует абстракция Cookies, используемая для хранения промежуточных данных между вызовами агента.</p>
+</blockquote>
+<p>В общем случае взаимодействие агента с ассистентом и пользователем можно изобразить в виде <img src="img/seq1.png" alt="последовательности вызовов" /></p>
+<h2>Реализация агента</h2>
+<p>Каждый агент должен реализовывать методы абстрактного класса <a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/client/AssistantAgent.html"><code>AssistantAgent</code></a>, который предлагает переопределить по крайней мере один метод - <a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Agent.html#onCommand(mobi.voiceassistant.base.Request)"><code>onCommand</code></a>.</p>
+<h3>onCommand</h3>
+<p>Этот метод - единая точка входа в ваше приложение для ассистента. Ассистент вызывает его каждый раз, когда пользователь взаимодействует с вашим агентом (посредством речи или UI).</p>
+<p>Метод выполняется на главном потоке и принимает в качестве аргумента экземпляр класса <a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Request.html"><code>Request</code></a>, содержащий все необходимые данные для выполнения команды.</p>
+<blockquote>
+<p>Как правило, реализация этого метода заключается в делегировании вызова одному из методов агента, соответствующему идентификатору команды (<code>dispatchId</code>).</p>
+</blockquote>
+<h3>Request</h3>
+<p>Запрос пользователя содержит идентификатор команды, информацию о сессии, набор &quot;кукисов&quot; и непосредственно контент.</p>
+<p>Контентом может являться <a href="token.html">токен</a> (в случае голосового взаимодействия с пользователем) или любой другой <a href="http://developer.android.com/reference/android/os/Parcelable.html">Parcelable</a> объект (в случае неголосового взаимодействия, например при нажатии на кнопку в UI).</p>
+<p>Request также содержит <code>Uri</code> запроса - идентификатор элемента в истории беседы с пользователем, к которому будет привязан ответ(ы) агента на этот запрос.</p>
+<p>С помощью метода <a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Request.html#createResponse()"><code>createResponse</code></a> можно сгенерировать ответ, который впоследствии нужно наполнить данными. Каждый ответ необходимо добавить в запрос с помощью метода <a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Request.html#addResponse(mobi.voiceassistant.base.Response)"><code>addResponse</code></a>.</p>
+<blockquote>
+<p>В классе <code>Request</code> существует множество вспомогательных методов для быстрой генерации ответа в одну строку, изменения предыдущего ответа, его удаления и т.п. операций. Подробнее смотрите документацию по классу <a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Request.html"><code>Request</code></a>.</p>
+</blockquote>
+<h3>Response</h3>
+<p>Пользователь видит ответы от вашего приложения в виде &quot;<a href="bubbles.html">баблов</a>&quot;, всплывающих в ходе беседы на экране. Баблы могут быть оформлены в виде простого текста, либо более сложного UI.</p>
+<blockquote>
+<p>В основе своей реализации они используют <a href="http://developer.android.com/reference/android/widget/RemoteViews.html">RemoteViews</a>, т.к. только такое представление пользовательского интерфейса может быть использовано в стороннем процессе (ассистенте) в ОС Android. Поэтому необходимо учитывать все ограничения, накладываемые на реализацию UI посредством такого подхода.</p>
+</blockquote>
+<p>Кроме данных для отображения ответ может содержать текст для синтеза голосового ответа, набор &quot;кукисов&quot;, а также информацию о том, в каком речевом контексте должен быть обработан следующий запрос пользователя (подробности в разделе <a href="scopes.html">Scopes</a>). Т.е. ответ также управляет ходом диалога. Подробнее в документации по классу <a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Response.html"><code>Response</code></a>.</p>
+<blockquote>
+<p>Здесь мы тоже предлагаем аналогию с веб-программированием, где уровень представления отделён от уровня логики и управления. В случае с ассистентом <a href="grammarsyntax.html">модули</a> декларативно описывают, как обрабатывать речь пользователя, а императивная часть (агенты) - что делать с этими данными и как управлять диалогом.</p>
+<p>Такой подход позволяет не смешивать диалоговые аспекты с бизнес-логикой, давая разработчику относительно простой и понятный способ внедрения речевого интерфейса в собственное приложение.</p>
+</blockquote>
+<h3>Кукисы</h3>
+<p>Как и в веб-технологиях, ассистент может хранить небольшие данные для вашего агента между двумя разными запросами к нему в виде кукисов. Например, в диалогах, где нужно поэтапно выяснять какие-то данные у пользователя, необходимо хранить информацию от предыдущих ответов. Или в случае обработки контекстных вопросов может понадобиться сохранить некоторое кратковременное состояние (<em>&quot;Какая сейчас погода в Москве&quot;</em>, а затем идет фраза <em>&quot;На неделю&quot;</em>).</p>
+<blockquote>
+<p>Агент может хранить необходимые данные и более длительное время, но для этого нужно пользоваться другими средствами андроида - например, базами данных или <code>SharedPreferences</code> (подробнее читайте в <a href="http://developer.android.com/guide/topics/data/data-storage.html">документации про хранение данных</a>)</p>
+</blockquote>
+<p>Для сохранения кукисов нужно воспользоваться методами [<code>putCookie</code>](http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Response.html#putCookie(int, java.lang.String, double)), которые принимают область видимости хранимого кукиса (<code>mode</code>), имя кукиса и его значение.</p>
+<blockquote>
+<p>Область видимости кукиса обозначает, для каких агентов этот кукис будет доступен в запросе. Таким образом можно организовать взаимодействие между различными агентами. Так, например, в каждом запросе присутствует доступный всем агентам кукис <code>Location</code>, содержащий последнее известное ассистенту местоположение пользователя.</p>
+<p><a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Response.html#COOKIE_MODE_AGENT"><code>COOKIE_MODE_AGENT</code></a> - кукис доступен только данному агенту</p>
+<p><a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Response.html#COOKIE_MODE_PACKAGE"><code>COOKIE_MODE_PACKAGE</code></a> - кукис доступен любому агенту пакета</p>
+<p><a href="http://voiceassistant.mobi/reference/mobi/voiceassistant/base/Response.html#COOKIE_MODE_GLOBAL"><code>COOKIE_MODE_GLOBAL</code></a> - кукис доступен всем, в том числе и агентам из других пакетов</p>
+</blockquote>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
