@@ -1,0 +1,76 @@
+
+@media (max-width: 700px) {
+
+    .content,
+    header .content {
+        width: 90%;
+    }
+
+    .head-title .title-3 {
+        font-size: 30px;
+    }
+    .head-title .title-4 {
+        font-size: 30px;
+    }
+
+    .app_link {
+        font-size: 36px;
+        margin-bottom: 60px;
+    }
+    .wish_link {
+        padding-left: 0;
+        padding-right: 0;
+        display: block;
+        width: 90%;
+    }
+
+    .item {
+        width: 90% !important;
+        margin-bottom: 30px;
+    }
+    .content_block {
+        padding: 15px 0;
+    }
+    .content_block .block_title {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .item-title,
+    .subscribe-block .item-title {
+        width: 90% !important;
+        margin-top: 1px;
+        font-size: 30px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .subscribe-block,
+    .subscribe-form {
+        margin-top: 10px;
+    }
+
+    .subscribe-form input,
+    .subscribe-form a {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .subscribe-form .email,
+    .subscribe-form .button {
+        width: 90%;
+    }
+
+    .subscribe-form .button {
+        left: auto;
+    }
+    .subscribe-form .email {
+        border-right: 3px solid #00baff;
+    }
+    iframe {
+        width: 480px;
+        height: 320px;
+    }
+}

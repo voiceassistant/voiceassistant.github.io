@@ -1,50 +1,164 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+<html>
+<head>
+    <title>Открытое API Ассистента на русском</title>
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <meta name="viewport" content="width=640, user-scalable=0">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="js/vendor/jquery-1.9.1.min.js"></script>
-        <script src="js/vendor/jquery.imagefit.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-        <div style="width: 100%; visibility: hidden;" id="header">
-            <img src="img/all_screens.png" width="1680" height="488">
-        </div>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,700,400italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 
-        <div style="text-align: center">
-            <h1 class="header">Ассистент на русском</h1>
-            <p class="lead">Голосовой мобильный ассистент на русском языке для платформы Android</p>
-            <a href="https://play.google.com/store/apps/details?id=mobi.voiceassistant.ru">
-                <img alt="Get it on Google Play"
-                     src="https://developer.android.com/images/brand/ru_generic_rgb_wo_60.png" />
-            </a>
-        </div>
+    <link rel="stylesheet" href="css/main.css"  />
+    <link rel="stylesheet" href="css/adaptive.css"  />
 
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+</head>
+<body>
 
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $("#header").imagefit();
-                $("#header").css({visibility: "visible"})
-            });
-        </script>
-    </body>
+    <header>
+        <section class="content">
+
+            <div class="head-title">
+                <span class="title-1">Открытое API</span>
+                <span class="title-2">Ассистента на русском</span>
+                <span class="title-3">API Ассистента на русском позволяет Android-разработчикам создавать мобильные системы с голосовым управлением на основе технологий искусственного интеллекта</span>
+                <span class="title-4"></span>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=mobi.voiceassistant.ru" target="_blank"><div class="head-icon"></div></a>
+
+        </section>
+    </header>
+
+    <section class="main">
+
+        <section class="row">
+            <section class="content">
+
+                <div class="content_block abilities">
+                    <div class="block_title">С помощью <em>API ассистента на русском</em> вы сможете</div>
+                    <div class="items-3">
+                        <div class="item">
+                            <img src="i/app_voice.png" alt="Add voice" />
+                            <span class="item-title">Добавить голосовое управление к любому Android-приложению</span>
+                        </div>
+                        <div class="item">
+                            <img src="i/app_new.png" alt="New app" />
+                            <span class="item-title">Создать собственное дополнение к приложению "Ассистент на русском"</span>
+                        </div>
+                        <div class="item">
+                            <img src="i/app_device.png" alt="Device" />
+                            <span class="item-title">Использовать голос для управления удаленными устройствами</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content_block video">
+                    <div class="block_title">API позволяет создавать решения с голосовым управлением, выходящие за рамки устройства, на котором оно работает</div>
+                    <div class="items-3">
+                        <div class="item">
+                            <iframe id="ytplayer1" type="text/html" width="320" height="240"
+                                    src="http://www.youtube.com/embed/bkO5P922B_s?autoplay=0"
+                                    frameborder="0"></iframe>
+                            <span class="item-title">Голосовое управление браузером</span>
+                        </div>
+                        <div class="item">
+                            <iframe src="//player.vimeo.com/video/76157140" width="320" height="240" frameborder="0"></iframe>
+                            <span class="item-title">Управление устройствами “умного дома" и домашним кинотеатром</span>
+                        </div>
+                        <div class="item">
+                            <iframe id="ytplayer2" type="text/html" width="320" height="240"
+                                    src="http://www.youtube.com/embed/dwOgKfZcePk?autoplay=0"
+                                    frameborder="0"></iframe>
+                            <span class="item-title">Голосовое управление Яндекс.Музыкой</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <section class="row blue">
+        	<section class="content">
+        		<div class="head-title">
+        			<span class="title-6">Больше чем просто распознавание речи</span>
+        			<span class="title-5">
+        				Помимо распознавания речи, API «Ассистента на русском» решает задачу распознавания смысла, установки и поддержания диалогового контекста, отображения интерфейса и синтеза речи для обратной связи с пользователем. <br/><br/>Все это теперь доступно разработчикам, кто не имеет знаний в технологиях ASR, TTS и NLP! API открывает вам возможность по внедрению голосового искусственного интеллекта в собственные приложения под Android.
+        			</span>
+        		</div>
+        	</section>
+        </section>
+
+        <span id="wish"></span>
+        <section class="row gray">
+            <section class="content">
+                <div class="content_block">
+                    <div class="block_title">Как начать использовать <strong>API</strong>:</div>
+                    <div class="uses_block items-4">
+                    	<div class="item">
+                            <span class="number-circle">1</span>
+                            <span class="item-title">Установите приложение <a href="https://play.google.com/store/apps/details?id=mobi.voiceassistant.ru" target="_blank">Ассистент на русском</a></span>
+                        </div>
+                        <div class="item">
+                            <span class="number-circle">2</span>
+                            <span class="item-title">Ознакомьтесь с <a href="http://voiceassistant.github.io/docs/ru/api-developer-guide/index.html" target="_blank">документацией</a></span>
+                        </div>
+                        <div class="item">
+                            <span class="number-circle">3</span>
+                            <span class="item-title">Вступите в <a href="https://plus.google.com/u/0/communities/110138816806589935412" target="_blank">сообщество</a> Google+ для связи с разработчиками</span>
+                        </div>
+                        <div class="item">
+                            <span class="number-circle">4</span>
+                            <span class="item-title">Разместите в описании вашего продукта ссылку на <a href="http://voiceassistant.mobi">voiceassistant.mobi</a></span>
+                        </div>
+                    </div>
+
+                    <div class="uses_block items-1 subscribe-block">
+                        <div class="item">
+                            <span class="number-circle">5</span>
+                            <span class="item-title">Подпишитесь на обновления API:</span>
+                        </div>
+
+                        <div id="mc_embed_signup" class="subscribe-form">
+                            <form action="http://everfriends.us4.list-manage.com/subscribe/post?u=347b5eea48ce9928783005030&amp;id=6ce5eb8556" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Ваш email" required>
+                                <a name="subscribe" href="javascript:void(0)" onclick="document.getElementById('mc-embedded-subscribe-form').submit()" id="mc-embedded-subscribe" class="button">Подписаться</a>
+                                <input type="hidden" name="subscribe" value="Подписаться" />
+                            </form>
+                        </div>
+
+                        <div class="note">*мы обещаем не использовать ваш адрес для рассылки нерелевантной информации</div>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+
+    </section>
+
+    <footer>
+        <section class="content items-4">
+            <div class="item">
+                <a href="http://voiceassistant.github.io/docs/ru/api-developer-guide/index.html">Документация</a>
+            </div>
+            <div class="item">
+                <a href="https://github.com/voiceassistant/samples">Примеры на GitHub</a>
+            </div>
+            <div class="item">
+                <a href="https://plus.google.com/u/0/communities/110138816806589935412">Сообщество в Google+</a>
+            </div>
+            <div class="item">
+                <a href="https://play.google.com/store/apps/details?id=mobi.voiceassistant.ru">Ассистент на русском</a>
+            </div>
+            <div class="item">
+                <a href="mailto:api@voiceassistant.mobi">api@voiceassistant.mobi</a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="js/smooth-scroll.js"></script>
+
+</body>
 </html>
